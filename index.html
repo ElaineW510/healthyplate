@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Plate Composer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <main class="main-content">
+            <!-- Left Panel - Food Elements -->
+            <section class="food-elements-panel">
+                <h2>Food Elements</h2>
+                
+                <div class="food-categories">
+                    <button class="category-tab active" data-category="vegetable">
+                        <i class="fas fa-carrot"></i> Vegetable
+                    </button>
+                    <button class="category-tab" data-category="protein">
+                        <i class="fas fa-drumstick-bite"></i> Protein
+                    </button>
+                    <button class="category-tab" data-category="carb">
+                        <i class="fas fa-seedling"></i> Carb
+                    </button>
+                </div>
+                
+                <div class="food-grid" id="foodGrid">
+                    <!-- Food items will be populated by JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Right Panel - Meal Plate & Nutrition -->
+            <section class="meal-plate-panel">
+                <div class="plate" id="mealPlate">
+                    <div class="plate-content">
+                    </div>
+                </div>
+                
+                <div class="nutrition-panel">
+                    <div class="nutrition-content" id="nutritionContent">
+                        <div class="nutrition-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                            <p>Drag food onto the plate to see nutrition facts.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <button class="btn btn-primary" id="resetBtn">
+                <i class="fas fa-redo"></i> Reset Plate
+            </button>
+            <button class="btn btn-secondary" id="saveBtn">
+                <i class="fas fa-save"></i> Save Meal
+            </button>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
