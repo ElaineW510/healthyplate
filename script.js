@@ -231,7 +231,7 @@ function renderPlateItems() {
                 </div>
                 <div class="food-content">
                     ${item.food.customIcon ? 
-                        `<div class="custom-icon-${item.food.customIcon} plate-icon" style="background-image: url('${item.food.customIcon === 'broccoli' ? 'Broccoli2' : item.food.customIcon}.png')"></div>` : 
+                        `<div class="custom-icon-${item.food.customIcon} plate-icon" style="background-image: url('${item.food.customIcon === 'broccoli' ? 'broccoli2' : item.food.customIcon}.png')"></div>` : 
                         `<div class="emoji-icon plate-icon"><span style="font-size: 3.5rem;">${item.food.icon}</span></div>`
                     }
                 </div>
